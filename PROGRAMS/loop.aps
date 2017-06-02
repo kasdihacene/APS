@@ -1,0 +1,8 @@
+[
+  VAR x int;
+  SET x 22;
+  WHILE (lt x 42)
+    [
+      SET x (add x 1)
+    ]  
+]

@@ -1,0 +1,36 @@
+# PGCD de deux entiers
+[
+  CONST a 42;
+  CONST b 70;
+
+  IF (eq a b)
+    [
+      ECHO a
+    ]
+    [
+      VAR aa int;
+      VAR ba int;
+      VAR x int;
+      VAR y int;
+      IF (lt a b)
+        [
+	  SET x a;
+	  SET aa b;
+	  SET bb x
+	]
+	[ SET x x ];
+      SET x bb;
+      SET y 1;
+      WHILE (not (eq x 0))
+        [
+	  SET x (add x bb);
+	  IF (or (lt aa x) (eq aa x))
+	    [
+	      SET x (sub x aa)
+	    ]
+	    [ SET x x ];
+	  SET y (sub y 1)  
+	];
+      ECHO (div aa y)	
+    ]
+]

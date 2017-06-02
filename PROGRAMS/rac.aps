@@ -1,0 +1,18 @@
+
+[
+  CONST n int 42;
+  VAR r int;
+  VAR y int;
+  VAR z int;
+
+  SET r 0;
+  SET y 1;
+  SET z 1;
+  WHILE (or (lt y n) (eq y n))
+    [
+      SET r (add r 1);
+      SET z (add z 2);
+      SET y (add y z)
+    ];
+  ECHO r 
+]

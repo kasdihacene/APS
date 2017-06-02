@@ -1,0 +1,30 @@
+
+[
+  CONST x int 2;
+  CONST n int 5;
+
+  IF (eq n 0)
+    [
+      ECHO 1
+    ]
+    [
+      VAR i int;
+      VAR r int;
+
+      SET i n;
+      SET r x;
+      WHILE (lt 1 i)
+        [
+	  SET r (mul r r);
+	  SET i (div i 2)
+	];
+      IF (eq n (mul (div n 2) 2))
+        [
+	  ECHO r
+	]
+	[
+	  ECHO (mul r x)
+	]
+    ]
+
+]
